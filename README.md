@@ -1,54 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <header>
-        <h1>Rafael - Especialista em ServiceNow e Salesforce</h1>
-        <p>Bem-vindo ao meu portfólio! Aqui você encontra detalhes sobre minha experiência e projetos nas áreas de tecnologia e automação.</p>
-        <p>Welcome to my portfolio! Here you can find details about my experience and projects in the fields of technology and automation.</p>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="about">Sobre Mim</a></li>
-            <li><a href="projects">Projetos</a></li>
-            <li><a href="contact">Contato</a></li>
-        </ul>
+   <header>
+       <h1>Welcome to My Portfolio</h1>
+       <p>Explore my experience, projects, and contact details.</p>
+  </header>
+<nav>
+      <ul>
+      <li><a href="#" onclick="toggleContent(event, 'about')">Sobre Mim</a></li>
+        <li><a href="#" onclick="toggleContent(event, 'projects')">Projetos</a></li>
+    <li><a href="#" onclick="toggleContent(event, 'contact')">Contato</a></li>
+       </ul>
    </nav>
-
-<section id="about">
-        <h2>Sobre Mim</h2>
-        <p>Sou formado em Análise e Desenvolvimento de Sistemas pela UMC Villa Lobos, com experiência em consultoria e análise de UX. Trabalhei em empresas como B3 e Alpar, atuando em projetos inovadores como a implementação de um chatbot integrado ao MS Luis.</p>
-        <p>Certificações: UX Writing, ServiceNow VA, System Administrator, DataCloud, CRM Analytics e Marketing Cloud.</p>
-</section>
- 
-<section id="projects">
-<h2>Projetos</h2>
-    <h3>ServiceNow</h3>
-        <p>Exemplo de automação com Scripted REST API:</p>
-        <pre><code>(function process(request, response) {  
-    var data = {  
-        message: "Hello, " + request.queryParams.name || "World!"  
-    };  
-    response.setBody(data);  
-})(request, response);
-</code></pre>
-
-<h3>Salesforce</h3>
-        <p>Exemplo de trigger em Apex:</p>
-        <pre><code>trigger UpdateContact on Account (after update) {  
-    for (Account acc : Trigger.new) {  
-        List<Contact> contacts = [SELECT Id, Email FROM Contact WHERE AccountId = :acc.Id];  
-        for (Contact c : contacts) {  
-            c.Email = acc.Email_Domain__c;  
-        }  
-        update contacts;  
-    }  
-}</code></pre>
-
-</section>
-
-<section id="contact">
-        <h2>Contato</h2>
-        <p>Quer entrar em contato comigo? Envie um e-mail para <strong>rafael.merli@hotmail.com</strong> ou acesse meu <a href="www.linkedin.com/in/rafael-hoffmann-merli-960131123
-
-">LinkedIn</a>.</p>
-    </section>
-<p>&copy; 2025 Rafael. Todos os direitos reservados.</p>
+   <section>
+       <div id="about" class="hidden-content">
+         <p>Sou Rafael, um profissional com experiência em tecnologia e automação...</p>
+       </div>
+       <div id="projects" class="hidden-content">
+           <p>Aqui estão alguns dos projetos que desenvolvi, incluindo integrações e automações...</p>
+        </div>
+      <div id="contact" class="hidden-content">
+           <p>Entre em contato comigo pelo email: rafael@example.com</p>
+       </div>
+   </section>
+   <footer>
+        <p>&copy; 2025 Rafael. Todos os direitos reservados.</p>
+    </footer>
+   <script>
+        function toggleContent(event, id) {
+            event.preventDefault();
+            const content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+   </script>
 </body>
+</html>
