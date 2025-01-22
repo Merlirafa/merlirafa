@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafael - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
 <body>
     <header>
         <h1>Rafael - Especialista em ServiceNow e Salesforce</h1>
         <p>Bem-vindo ao meu portfólio! Aqui você encontra detalhes sobre minha experiência e projetos nas áreas de tecnologia e automação.</p>
+        <p>Welcome to my portfolio! Here you can find details about my experience and projects in the fields of technology and automation.</p>
     </header>
-
     <nav>
         <ul>
-            <li><a href="#about">Sobre Mim</a></li>
-            <li><a href="#projects">Projetos</a></li>
-            <li><a href="#contact">Contato</a></li>
+            <li><a href="about">Sobre Mim</a></li>
+            <li><a href="projects">Projetos</a></li>
+            <li><a href="contact">Contato</a></li>
         </ul>
     </nav>
 
