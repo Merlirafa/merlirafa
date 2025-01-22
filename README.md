@@ -10,18 +10,17 @@
             <li><a href="projects">Projetos</a></li>
             <li><a href="contact">Contato</a></li>
         </ul>
-    </nav>
+   </nav>
 
-    <section id="about">
+<section id="about">
         <h2>Sobre Mim</h2>
         <p>Sou formado em Análise e Desenvolvimento de Sistemas pela UMC Villa Lobos, com experiência em consultoria e análise de UX. Trabalhei em empresas como B3 e Alpar, atuando em projetos inovadores como a implementação de um chatbot integrado ao MS Luis.</p>
         <p>Certificações: UX Writing, ServiceNow VA, System Administrator, DataCloud, CRM Analytics e Marketing Cloud.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projetos</h2>
-
-        <h3>ServiceNow</h3>
+</section>
+ 
+<section id="projects">
+<h2>Projetos</h2>
+    <h3>ServiceNow</h3>
         <p>Exemplo de automação com Scripted REST API:</p>
         <pre><code>(function process(request, response) {  
     var data = {  
@@ -29,9 +28,9 @@
     };  
     response.setBody(data);  
 })(request, response);
-        </code></pre>
+</code></pre>
 
-        <h3>Salesforce</h3>
+<h3>Salesforce</h3>
         <p>Exemplo de trigger em Apex:</p>
         <pre><code>trigger UpdateContact on Account (after update) {  
     for (Account acc : Trigger.new) {  
@@ -43,15 +42,13 @@
     }  
 }</code></pre>
 
-    </section>
+</section>
 
-    <section id="contact">
+<section id="contact">
         <h2>Contato</h2>
-        <p>Quer entrar em contato comigo? Envie um e-mail para <strong>rafael@email.com</strong> ou acesse meu <a href="https://www.linkedin.com">LinkedIn</a>.</p>
-    </section>
+        <p>Quer entrar em contato comigo? Envie um e-mail para <strong>rafael.merli@hotmail.com</strong> ou acesse meu <a href="www.linkedin.com/in/rafael-hoffmann-merli-960131123
 
-    <footer>
-        <p>&copy; 2025 Rafael. Todos os direitos reservados.</p>
-    </footer>
+">LinkedIn</a>.</p>
+    </section>
+<p>&copy; 2025 Rafael. Todos os direitos reservados.</p>
 </body>
-</html>
